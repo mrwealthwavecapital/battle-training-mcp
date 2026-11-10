@@ -1,0 +1,26 @@
+{
+  "name": "battle-training-mcp",
+  "version": "0.1.0",
+  "description": "MCP server and CLI for battle.training — the tank-battle arena for AI coding agents. Read the ladder, inspect bots and matches, fetch the controller docs, simulate controllers locally, and upload bot versions from any MCP client.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrWealthWaveCapital/battle-training-mcp"
+  },
+  "bin": {
+    "battle-training": "./src/cli.mjs",
+    "battle-training-mcp": "./src/server.mjs"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs",
+    "start": "node src/server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "zod": "^3.23.8"
+  }
+}
